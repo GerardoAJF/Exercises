@@ -1,3 +1,15 @@
+"""
+roman to int is a function to convert roman numbers (strings) int natural numbers (int)
+
+EXAMPLE:
+
+> roman_to_int("VII")
+7
+
+> roman_to_int("XIX")
+19
+"""
+
 def roman_to_int(letters):
     letters = list(letters)
     values = []
@@ -21,11 +33,3 @@ def roman_to_int(letters):
             values.insert(actual_number_index, next_number - actual_number)
 
     return sum(values)
-
-
-print(roman_to_int("VII"))
-print(roman_to_int("LXXX"))
-print(roman_to_int("MCCC"))
-print(roman_to_int("CM"))
-print(roman_to_int("IX"))
-print(roman_to_int("XC"))
