@@ -1,4 +1,3 @@
-import pprint
 
 with open("day10_input.txt", "r") as f:
     text = f.read()
